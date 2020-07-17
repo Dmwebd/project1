@@ -1,0 +1,59 @@
+.dev
+
+
+	&__cont
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+	&-left
+		width: 20.156vw
+		&__item
+			position: relative
+			height: 13.281vw
+			border-radius: 10px
+			background: $light
+			transition: all 0.4s ease-in
+			display: flex
+			align-items: flex-end
+			padding: 1.823vw
+			cursor: pointer
+			.text34
+				transition: all 0.4s ease-in
+			&:hover, &.active
+				background: $dark
+				.text34
+					color: $light
+				.dev-left__cir
+					&:before
+						background: $tgc
+					&:after
+						background: $light
+					&.t2
+						&:before
+							background: $light
+						&:after
+							background: $tgc
+		&__cir
+			position: absolute
+			right: 1.823vw
+			top: 1.823vw
+			height: 2.188vw
+			overflow: hidden
+			&:before, &:after
+				content: ''
+				display: block
+				position: relative
+				width: 1.458vw
+				height: 1.458vw
+				border-radius: 100%
+				background: $dark
+				transition: all 0.4s ease-out
+			&.t2
+				&:before
+					margin-top: -0.729vw
+	&-right
+		width: 48.958vw
+		background: $light
+		position: relative
+		padding: 3.49vw 9vw 3.49vw 4.5vw
+		
