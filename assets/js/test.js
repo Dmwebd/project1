@@ -17,13 +17,12 @@ $(document).ready(function($) {
 
   // $('.test__left-block').css('height', heightTest);
 
-function htest (num){
-  heightTest = $(item).eq(num).outerHeight();
+// function htest (num){
+//   heightTest = $(item).eq(num).outerHeight();
 
-  $('.test__left-block').css('height', heightTest);
-  console.log(heightTest)
-}
-htest (0);
+//   $('.test__left-block').css('height', heightTest);
+// }
+// htest (0);
   // проверка на инпуты выбора
   var numInput = 0;
   $element.on('change input', function (e) {
@@ -44,52 +43,44 @@ htest (0);
 
     // логика кнопок и появление лейбла
     if(numInput > 0){
-      $(this).parents(item).find('.test-next').removeAttr('disabled');
-      $(this).parents(item).find('.test-tool').removeClass('active');
-      $(this).parents(item).find('.btn-lbs').hide();
-    }else{
-      $(this).parents(item).find('.test-tool').addClass('active');
-      $(this).parents(item).find('.btn-lbs').show();
-      setTimeout(function(){
-        $(this).parents(item).find('.test-tool').removeClass('active');
-      }, 3000);
+      $(this).parents(item).find('.test-next').removeAttr('disabled').removeClass('dark');
     }
 
   });
 
   // клик по дисейбл кнопке
-  var lbs = false;
-  $('.btn-lbs').on('click', function(event) {
-    event.preventDefault();
-    $('.test-tool').addClass('active');
+  // var lbs = false;
+  // $('.btn-lbs').on('click', function(event) {
+  //   event.preventDefault();
+  //   $('.test-tool').addClass('active');
     
-    if(!lbs){
-      setTimeout(function(){
-        $('.test-tool').removeClass('active');
-        lbs = false;
-      }, 3000);
-      lbs = true;
-    }
+  //   if(!lbs){
+  //     setTimeout(function(){
+  //       $('.test-tool').removeClass('active');
+  //       lbs = false;
+  //     }, 3000);
+  //     lbs = true;
+  //   }
 
-  });
+  // });
 
 
 
   // взаимодействие с анимацией
-  $(item).eq(0).find('.tiem').addClass('active');
+  $(item).eq(0).find('.t-item').addClass('active');
   var ns = 0;
   var ns2 = itemCol;
 
   var testdDelays = 1;
   function testItem(num){
-    $(item).find('.tiem, .tiem-wrap').removeClass('active');
+    $(item).find('.t-item').removeClass('active');
     testdDelays = 1;
-    $(item).eq(num).find('.tiem, .tiem-wrap').each(function(index, el) {
+    $(item).eq(num).find('.t-item').each(function(index, el) {
       var tbi = $(this);
       setTimeout(function(){
         tbi.addClass('active');
       }, testdDelays);
-      testdDelays += 240;
+      testdDelays += 200;
     });
   }
 
@@ -97,17 +88,40 @@ htest (0);
   // клики
   btnNext.on('click', function(event) {
     event.preventDefault();
-      $('.test-title-block').removeClass('active').eq(ns + 1).addClass('active');
       
-      $(item).eq(ns).addClass('end-q').removeClass('active');
-      $(item).eq(ns + 1).removeClass('end-q').addClass('active');
+      $(item).hide();
+      $(item).eq(ns + 1).fadeIn();
       testItem(ns + 1);
       ++ns;
-      $('.test__right-head2, .test__right-head').addClass('act');
-      if(ns === itemCol - 1){
-        $('.test-title').hide();
+      // $('.test__right-head2, .test__right-head').addClass('act');
+      if(ns === itemCol - 2){
+         $('.final').addClass('active');
+         $('.test__block').addClass('active');
+         var qwOne = '';
+         function valQw(num, text){
+            $(item).eq(num).find('.t-item input').each(function(index, el) {
+              if($(this).prop('checked')){
+               qwOne += $(this).val() + ' ,';
+              }
+            });
+            qwOne = qwOne.substring(0, qwOne.length - 1)
+            $(text).text(qwOne);
+            if(num === 5){
+              qwOne = 'Дизайн: ';
+            }else{
+              qwOne = '';
+            }
+         }
+
+         valQw(0 , '.text-qw-1');
+         valQw(1 , '.text-qw-2');
+         valQw(2 , '.text-qw-3');
+         valQw(3 , '.text-qw-4');
+         valQw(4 , '.text-qw-5');
+         valQw(5 , '.text-qw-6');
+         
       }
-      htest (ns);
+      // htest (ns);
       animateTop ();
     
   });
@@ -117,13 +131,11 @@ htest (0);
     event.preventDefault();
 
       --ns;
-      $('.test-title-block').removeClass('active').eq(ns).addClass('active');
-      
-      $(item).eq(ns + 2).addClass('end-q').removeClass('active');
-      $(item).eq(ns + 1).addClass('end-q').removeClass('active');
-      $(item).eq(ns).removeClass('end-q').addClass('active');
+
+      $(item).hide();
+      $(item).eq(ns).fadeIn();
       testItem(ns);
-      htest (ns);
+      // htest (ns);
       animateTop ();
   });
 

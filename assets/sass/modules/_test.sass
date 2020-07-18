@@ -1,19 +1,83 @@
 .test
-	background-color: $dark
 	color: $light
-	height: 42vw
 	position: relative
 	padding-top: 4vw
-	&-wrapper
+	&-descr
 		position: absolute
-		left: -0px
+		right: 16vw
+		top: 4vw
+
+	&-bg
+		position: absolute
+		left: 0
 		top: 0
 		width: 100%
-		height: 100%
 		overflow: hidden
-
-
-
+		height: 42vw
+		background-color: $dark
+	
+	&__block
+		background: $light
+		border-radius: 20px
+		width: 81.5%
+		padding: 2.6vw 3.4vw
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			left: 50%
+			top: 0
+			width: 2px
+			background-color: #C9D4FC
+			height: 100%
+			transform: translateX(-50%)
+			opacity: 0
+			transition: all 0.4s
+		&.active
+			&:before
+				opacity: 1
+	&-item
+		display: none
+		&:first-child
+			display: block
+		&__title
+			display: flex
+			justify-content: space-between
+			align-items: center
+			padding-bottom: 2vw
+			border-bottom: 1px solid #C9D4FC
+			color: $dark
+		&__cont
+			display: flex
+			flex-wrap: wrap
+	&-btns
+		display: flex
+		justify-content: space-between
+	&-prev
+		background: transparent
+		border: none
+		cursor: pointer
+		.btn-arrow
+			margin-left: 0
+			border: 1px solid #C9D4FC
+			width: 3.5vw
+			height: 3.5vw
+			transition: all 0.4s ease
+			path
+				fill: #C9CEE8
+				transition: all 0.4s ease
+			&:hover
+				border: 1px solid $dark
+				path
+					fill: $dark
+	&-thank
+		color: $dark
+		&__logo
+			margin-top: 9vw
+			display: flex
+			justify-content: flex-end
+			img
+				width: 8vw
 .main-circle-dark.v-test
 	top: -16vw
 	right: 7vw
@@ -30,3 +94,147 @@
 		right: -1vw
 		top: 50%
 		transform: translate(0, -50%)
+
+
+.t-item
+	position: relative
+	padding: 1vw 1.1vw
+	display: flex
+	width: 31%
+	margin-left: 1%
+	margin-right: 1%
+	cursor: pointer
+	z-index: 3
+	transition: all 0.25s ease-in
+	opacity: 0
+	&.active
+		opacity: 1
+	&:hover
+		z-index: 7
+	&__block
+		display: flex
+		align-items: center
+	&__bg
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		border: 1px solid #C9D4FC
+		border-radius: 10px
+		z-index: 1
+		transition: all 0.4s ease
+	.text18
+		color: #8E9CCF
+.check
+	border: 1px solid #C9D4FC
+	// background-color: #eef5f8
+	width: 1.5vw
+	height: 1.5vw
+	display: flex
+	align-items: center
+	justify-content: center
+	border-radius: 100%
+	transition: all 0.4s ease
+	flex-shrink: 0
+	position: relative
+	&.v2
+		border-radius: 4px
+	&-active
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		background: $dark
+		border-radius: 100%
+		transition: all 0.4s ease
+		opacity: 0
+		transform: scale(0)
+		display: flex
+		align-items: center
+		justify-content: center
+		padding: 0.3vw
+		&.v2
+			border-radius: 4px
+.inp-block
+	display: none
+
+	&:checked ~ .t-item
+		&__bg
+			border: 1px solid $dark
+			opacity: 1
+	&:checked ~	span .text18
+		color: $dark
+	&:checked ~ span .check
+		border: 1px solid transparent
+		&-active
+			opacity: 1
+			transform: scale(1)
+
+.input-hidden
+	display: none
+
+.file
+	&-link
+		display: flex
+		justify-content: space-between
+		align-items: center
+		background: #F7F9FF
+		border: 1px dashed #C9D4FC
+		border-radius: 10px
+		padding: 0.5vw
+		padding-left: 1.4vw
+		color: #8E9CCF
+		width: 100%
+		cursor: pointer
+	&-text
+		&__block
+			display: flex
+			align-items: center
+
+		&__img
+			width: 3vw
+			height: 3vw
+			border-radius: 100px
+			background-color: $light
+			flex-shrink: 0
+			display: flex
+			align-items: center
+			justify-content: center
+			padding: 0.5vw
+
+.final
+	display: none
+	justify-content: space-between
+	align-items: center
+	color: $dark
+	&.active
+		display: flex !important
+	&-left
+		width: 50%
+		padding-right: 3vw
+
+		&__block
+			display: flex
+			flex-wrap: wrap
+
+		&__item
+			width: 47%
+			margin-left: 1.5%
+			margin-right: 1.5%
+			padding: 1.3vw 1.2vw
+			display: flex
+			justify-content: space-between
+			align-items: flex-start
+			border: 1px solid #C9D4FC
+			border-radius: 10px
+		&__img
+			width: 1vw
+			flex-shrink: 0
+	&-btn
+		justify-content: space-between
+	&-right
+		width: 50%
+		padding: 0 4.3vw
+		align-items: flex-start
