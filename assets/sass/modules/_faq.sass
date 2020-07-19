@@ -1,0 +1,120 @@
+.faq
+	position: relative
+	overflow: hidden
+	&__cont
+		display: flex
+		justify-content: space-between
+	&-left
+		width: 44%
+
+	&-right
+		width: 55%
+		padding-top: 2vw
+	&-item
+		padding-bottom: 2vw
+		border-bottom: 1px solid #C9CEE8
+		&__head
+			position: relative
+			display: flex
+			justify-content: space-between
+			cursor: pointer
+			transition: all 0.3s ease-in-out
+			&--plus
+				width: 2.6vw
+				height: 2.6vw
+				position: relative
+				border-radius: 100%
+				background-color: $light
+				flex-shrink: 0
+				&:before, &:after
+					content: ''
+					position: absolute
+					background-color: $dark
+					border-radius: 15px
+					transition: all 0.3s ease-in-out
+				&:before
+					left: 50%
+					width: 60%
+					height: 1px
+					top: 50%
+					transform: translate(-50%, -50%)
+				&:after
+					top: 50%
+					height: 60%
+					width: 1px
+					left: 50%
+					transform: translate(-50%, -50%)
+			&.active
+				margin-bottom: 1vw
+				.faq-item__head--plus
+					background-color: $dark
+					&:before, &:after
+						background-color: $light
+					&:after
+						transform: translate(-50%, -50%) rotate(90deg)
+		&__footer
+			display: none
+
+.main-circle-dark.v-faq
+	bottom: -3vw
+	right: auto
+	top: auto
+	left: -15vw
+	width: 36vw
+	height: 36vw
+	background-color: $light
+.main-circle-tg.v-faq
+	bottom: -20vw
+	left: 1vw
+	right: auto
+	// width: 43vw
+	// height: 46vw
+	&:after
+		left: -1vw
+		top: 50%
+		transform: translate(0, -50%)
+
+
+
+
+.footer
+	color: $light
+	background-color: $dark
+	&-row
+		display: flex
+		justify-content: space-between
+		align-items: center
+		&.t2
+			margin-top: 6vw
+			align-items: flex-end
+		&.t3
+			justify-content: flex-start
+	&-top
+		display: flex
+		align-items: center
+		transition: all 0.4s ease
+		color: $light
+		&:hover &
+			&__img
+				background-color: $light
+				path
+					fill: $dark
+		&__img
+			border-radius: 100%
+			background: #34489E
+			width: 4.271vw
+			height: 4.271vw
+			transition: all 0.4s ease
+			display: flex
+			align-items: center
+			justify-content: center
+			path
+				fill: $light
+				transition: all 0.4s ease
+	&-right
+		display: flex
+		
+	.nav-social__item
+		background-color: $light
+		path
+			fill: $dark

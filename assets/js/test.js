@@ -6,23 +6,8 @@ $(document).ready(function($) {
   var btnPrev = $('.test-prev');
 
 
-  // высота квиза
-  var heightTest = 0;
 
-  // $(item).each(function(index, el) {
-  //   if($(this).outerHeight() > heightTest){
-  //     heightTest = $(this).outerHeight();
-  //   }
-  // });
 
-  // $('.test__left-block').css('height', heightTest);
-
-// function htest (num){
-//   heightTest = $(item).eq(num).outerHeight();
-
-//   $('.test__left-block').css('height', heightTest);
-// }
-// htest (0);
   // проверка на инпуты выбора
   var numInput = 0;
   $element.on('change input', function (e) {
@@ -41,28 +26,13 @@ $(document).ready(function($) {
 
     });
 
-    // логика кнопок и появление лейбла
+    // логика кнопок
     if(numInput > 0){
       $(this).parents(item).find('.test-next').removeAttr('disabled').removeClass('dark');
     }
 
   });
 
-  // клик по дисейбл кнопке
-  // var lbs = false;
-  // $('.btn-lbs').on('click', function(event) {
-  //   event.preventDefault();
-  //   $('.test-tool').addClass('active');
-    
-  //   if(!lbs){
-  //     setTimeout(function(){
-  //       $('.test-tool').removeClass('active');
-  //       lbs = false;
-  //     }, 3000);
-  //     lbs = true;
-  //   }
-
-  // });
 
 
 
@@ -93,7 +63,7 @@ $(document).ready(function($) {
       $(item).eq(ns + 1).fadeIn();
       testItem(ns + 1);
       ++ns;
-      // $('.test__right-head2, .test__right-head').addClass('act');
+
       if(ns === itemCol - 2){
          $('.final').addClass('active');
          $('.test__block').addClass('active');
@@ -121,7 +91,6 @@ $(document).ready(function($) {
          valQw(5 , '.text-qw-6');
          
       }
-      // htest (ns);
       animateTop ();
     
   });
@@ -135,7 +104,6 @@ $(document).ready(function($) {
       $(item).hide();
       $(item).eq(ns).fadeIn();
       testItem(ns);
-      // htest (ns);
       animateTop ();
   });
 
