@@ -101,12 +101,16 @@
 			bottom: -28vw
 			border-radius: 100%
 			background-color: #1F3D9C
+			opacity: 0
+			transform: scale(0)
 		&-tg
 			position: absolute
 			right: -10vw
 			bottom: 0
 			width: 38vw
 			height: 38vw
+			opacity: 0
+			transform: scale(0)
 			&:before, &:after
 				content: ''
 				position: absolute
@@ -280,8 +284,37 @@
 	align-items: flex-start
 	margin: 0.32vw 0
 	transition: 0.25s ease-in-out
+	color: $dark
 	&:hover
 		color: $tgc
 	.text
 		margin-top: 0.4vw
 		margin-right: 2vw
+
+.burger
+	width: 4rem
+	height: 4rem
+	cursor: pointer
+	display: none
+	img
+		width: 100%
+.nav-social-mobile
+	display: flex
+	margin-top: 2.6rem
+.nav-social__item
+	width: 4rem
+	height: 4rem
+	margin-right: 1rem
+.dev-left__item-mobile
+	display: none
+
+
+// .mCSB_scrollTools
+// 	z-index: 150
+// .mCSB_inside > .mCSB_container
+// 	margin: 0
+// .mCSB_scrollTools .mCSB_draggerRail
+// 	opacity: 0
+// .mCS-dark-thin.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar
+// 	width: 90%
+// 	background-color: rgba(#1F3D9C,1)

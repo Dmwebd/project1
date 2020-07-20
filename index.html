@@ -20,14 +20,15 @@
 	<link rel="stylesheet" href="assets/js/fancy/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="assets/js/slick/slick-theme.css">
 	<link rel="stylesheet" href="assets/js/slick/slick.css">
+	<!-- <link rel="stylesheet" href="assets/js/jquery.mCustomScrollbar.css"> -->
 	<!-- <link rel="stylesheet" href="assets/css/fancySelect.css"> -->
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
 	<div class="main" id="main">
-		<div class="main-circle-dark"></div>
-		<div class="main-circle-tg"></div>
+		<div class="main-circle-dark sacaleAnim"></div>
+		<div class="main-circle-tg sacaleAnim"></div>
 		<div class="header">
 			<div class="container header__cont">
 				<div class="logo">
@@ -58,6 +59,10 @@
 						<a href="mailto:sales@decentury.io" class="header__number-link text20 fw5">sales@decentury.io</a>
 					</div>
 				</div>
+
+				<div class="burger">
+					<img src="assets/img/mobile/menue.svg" alt="">
+				</div>
 			
 				
 			
@@ -66,16 +71,16 @@
 
 
 		<div class="container main__cont">
-			<div class="text26 fw6 mbm">
+			<div class="text26 fw6 mbm title-first">
 				Мы разрабатываем
 			</div>
-			<h1 class="title fw5 msm">
+			<h1 class="title fw5 msm title-first">
 				Мобильные приложения <br>
 				и сервисы для бизнеса 
 			</h1>
 
 
-			<a href="#price" class="btn main-btn open-js">
+			<a href="#test" class="btn main-btn link-scr">
 				<span class="btn-blick"></span>
 				<span class="text18 fw6">Рассчитать стоимость </span>
 				<span class="btn-arrow">
@@ -142,12 +147,13 @@
 		</div>
 	</div>
 	<div class="nav-overlay">
-		<div class="main-circle-dark"></div>
-		<div class="main-circle-tg"></div>
+		<div class="close nav-close"></div>
+		<div class="main-circle-dark sacaleAnim"></div>
+		<div class="main-circle-tg sacaleAnim"></div>
 		<div class="container nav-overlay__cont">
 			<ul class="nav-list">
 				<li>
-					<a href="#" class="nav-item">
+					<a href="/" class="nav-item">
 						<span class="fwb text ">01</span>
 						<span class="fw5 text60">
 							Главная
@@ -155,7 +161,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="#" class="nav-item">
+					<a href="#services" class="nav-item">
 						<span class="fwb text ">02</span>
 						<span class="fw5 text60">
 							Услуги
@@ -163,7 +169,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="#" class="nav-item">
+					<a href="#portfolio" class="nav-item">
 						<span class="fwb text ">03</span>
 						<span class="fw5 text60">
 							Портфолио
@@ -171,7 +177,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="#" class="nav-item">
+					<a href="#dev" class="nav-item">
 						<span class="fwb text ">04</span>
 						<span class="fw5 text60">
 							Этапы
@@ -179,7 +185,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="#" class="nav-item">
+					<a href="#test" class="nav-item">
 						<span class="fwb text ">05</span>
 						<span class="fw5 text60">
 							Расчёт стоимости
@@ -187,7 +193,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="#" class="nav-item">
+					<a href="#team" class="nav-item">
 						<span class="fwb text ">06</span>
 						<span class="fw5 text60">
 							Команда
@@ -195,7 +201,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="#" class="nav-item">
+					<a href="#trust" class="nav-item">
 						<span class="fwb text ">07</span>
 						<span class="fw5 text60">
 							Нам доверяют
@@ -203,7 +209,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="#" class="nav-item">
+					<a href="#faq" class="nav-item">
 						<span class="fwb text ">08</span>
 						<span class="fw5 text60">
 							FAQ
@@ -211,12 +217,28 @@
 					</a>
 				</li>
 			</ul>
+
+			<div class="nav-social nav-social-mobile">
+				<a href="#" target="_blank" class="nav-social__item mbm">
+					<svg width="10" height="19" viewBox="0 0 10 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M8.17432 3.15479H10V0.133792C9.68503 0.092625 8.60178 0 7.34022 0C4.70794 0 2.90476 1.57304 2.90476 4.46421V7.125H0V10.5022H2.90476V19H6.46613V10.503H9.2534L9.69586 7.12579H6.4653V4.79908C6.46613 3.82296 6.74277 3.15479 8.17432 3.15479Z"/>
+					</svg>
+				</a>
+				<a href="#" target="_blank" class="nav-social__item">
+					<svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M16.9969 17.0004V16.9997H17.0012V10.7646C17.0012 7.7144 16.3445 5.36475 12.7786 5.36475C11.0643 5.36475 9.91394 6.30546 9.4443 7.19729H9.39471V5.64951H6.01367V16.9997H9.53426V11.3795C9.53426 9.89972 9.81477 8.46881 11.6473 8.46881C13.4529 8.46881 13.4799 10.1576 13.4799 11.4744V17.0004H16.9969Z"/>
+					<path d="M0.279297 5.6499H3.80413V17.0001H0.279297V5.6499Z"/>
+					<path d="M2.04152 0C0.914503 0 0 0.914503 0 2.04152C0 3.16853 0.914503 4.10216 2.04152 4.10216C3.16853 4.10216 4.08303 3.16853 4.08303 2.04152C4.08232 0.914503 3.16782 0 2.04152 0V0Z" />
+					</svg>
+
+				</a>
+			</div>
 		</div>
 	</div>
 
 
 	<!-- services -->
-	<div class="services">
+	<div class="services" id="services">
 		<div class="container services__cont">
 			<div class="services__left">
 				<div class="text tgc mbs fw6">
@@ -296,7 +318,7 @@
 					</div>
 
 					<div class="services-item__img">
-						<img src="assets/img/services/s-1.svg" alt="">
+						<img src="assets/img/services/s-1.svg" alt="" class="px-js">
 					</div>
 
 					<div class="services-item__text">
@@ -326,7 +348,7 @@
 					</div>
 
 					<div class="services-item__img t2">
-						<img src="assets/img/services/s-2.svg" alt="">
+						<img src="assets/img/services/s-2.svg" alt="" class="px-js">
 					</div>
 				</div>
 
@@ -336,7 +358,7 @@
 					</div>
 
 					<div class="services-item__img">
-						<img src="assets/img/services/s-3.svg" alt="">
+						<img src="assets/img/services/s-3.svg" alt="" class="px-js">
 					</div>
 
 					<div class="services-item__text">
@@ -366,7 +388,7 @@
 					</div>
 
 					<div class="services-item__img t2">
-						<img src="assets/img/services/s-4.svg" alt="">
+						<img src="assets/img/services/s-4.svg" alt="" class="px-js">
 					</div>
 				</div>
 
@@ -376,7 +398,7 @@
 					</div>
 
 					<div class="services-item__img">
-						<img src="assets/img/services/s-5.svg" alt="">
+						<img src="assets/img/services/s-5.svg" alt="" class="px-js">
 					</div>
 
 					<div class="services-item__text">
@@ -406,7 +428,7 @@
 					</div>
 
 					<div class="services-item__img t2">
-						<img src="assets/img/services/s-6.svg" alt="">
+						<img src="assets/img/services/s-6.svg" alt="" class="px-js">
 					</div>
 				</div>
 
@@ -415,7 +437,7 @@
 	</div>
 
 	<!-- portfolio -->
-	<div class="section portfolio">
+	<div class="section portfolio" id="portfolio">
 		<div class="container">
 			<div class="text tgc mbs fw6">
 				02
@@ -458,7 +480,7 @@
 							Проект приурочен к созданию и выпуску на биржу криптовалюты NEEO Play и нацелен на поддержание спроса на токены. <br><br>
 							Платформа содержит игры, за победу в которых игрок получает вознаграждение.
 						</p>
-						<a href="#" class="portfolio-link text23 tdu fw6 mb">Отзыв директора ООО"НЕЕО АПП"</a>
+						<a href="#modal-portfolio-1" class="portfolio-link open-js text23 tdu fw6 mb">Отзыв директора ООО"НЕЕО АПП"</a>
 						<div class="portfolio-item__bot">
 							<div class="text18 mbm">
 								<b>Технологии:</b> <span class="lgray">Блокчейн Ethereum, Python, <br> IOS/Android - разработка </span>
@@ -517,7 +539,7 @@
 	</div>
 
 	<!-- dev -->
-	<div class="section dev">
+	<div class="section dev" id="dev">
 		<div class="container">
 			<div class="text tgc mbs fw6">
 				03
@@ -547,6 +569,14 @@
 
 				<div class="dev-right">
 					<div class="dev-right__item">
+						<div class="dev-left__item msm active dev-left__item-mobile">
+							<div class="dev-left__cir">
+							</div>
+							<h3 class="text34 fw6 lh09">
+								Бизнес <br>
+								приложения
+							</h3>
+						</div>
 						<h5 class="fw6 text28 mbm">
 							Привлекаем отраслевого бизнес - консультанта 
 						</h5>
@@ -577,7 +607,7 @@
 						<p class="text18 mbd dgray">
 							В приложении устанавливаем криптозащиту конфиденциальной информации пользователей.
 						</p>
-						<a href="#" class="btn open-js">
+						<a href="#modal-callback" class="btn open-js">
 							<span class="btn-blick"></span>
 							<span class="text18 fw6">Давайте начнем работу!</span>
 							<span class="btn-arrow">
@@ -589,6 +619,13 @@
 					</div>
 
 					<div class="dev-right__item" style="display: none;">
+						<div class="dev-left__item msm active dev-left__item-mobile v2">
+							<div class="dev-left__cir">
+							</div>
+							<h3 class="text34 fw6 lh09">
+								Стартапы
+							</h3>
+						</div>
 						<h5 class="fw6 text28 mbm">
 							Расcчитываем бизнес - модель монетизации 
 							вашего приложения
@@ -611,7 +648,7 @@
 						<p class="text18 mbd dgray">
 							Перед каждым спринтом делаем аналитику и дорабатываем функционал с учетом обратной связи пользователей и результатов тестирования гипотез.
 						</p>
-						<a href="#" class="btn open-js">
+						<a href="#modal-callback" class="btn open-js">
 							<span class="btn-blick"></span>
 							<span class="text18 fw6">Давайте начнем работу!</span>
 							<span class="btn-arrow">
@@ -627,7 +664,7 @@
 	</div>
 
 	<!-- steps -->
-	<div class="section steps">
+	<div class="section steps" id="steps">
 		<div class="container">
 			<div class="text tgc mbs fw6">
 				04
@@ -638,43 +675,17 @@
 
 			<div class="steps__cont">
 				<div class="steps-item mlg">
-					<div class="steps-item__img msm">
-						<img src="assets/img/steps/i-1.svg" alt="">
-					</div>
-					<div class="steps-item__title mb">
-						<h5 class="fw6 text34">
-							Бизнес - анализ <br>
-							целевого рынка
-						</h5>
-						<div class="steps-item__plus"></div>
-					</div>
-
-					<div class="steps-item__text fw3 text">
-						<p class="mbm">
-							1. Описание функционала и построение бизнес - логики приложения 
-						</p>
-						<p class="mbm">
-							2. Прогнозирование максимальной нагрузки приложения 
-						</p>
-						<p class="mbm">
-							3. Определение стека техологий для  разработки
-						</p>
-						<p class="mbm">
-							4 .Оценка стоимости и сроков разработки 
-						</p>
-					</div>
-				</div>
-
-				<div class="steps-item mlg">
-					<div class="steps-item__img msm">
-						<img src="assets/img/steps/i-2.svg" alt="">
-					</div>
-					<div class="steps-item__title mb">
-						<h5 class="fw6 text34">
-							Техническое <br>
-							задание
-						</h5>
-						<div class="steps-item__plus"></div>
+					<div class="steps-item__head">
+						<div class="steps-item__img msm">
+							<img src="assets/img/steps/i-1.svg" alt="">
+						</div>
+						<div class="steps-item__title mb">
+							<h5 class="fw6 text34">
+								Бизнес - анализ <br>
+								целевого рынка
+							</h5>
+							<div class="steps-item__plus"></div>
+						</div>
 					</div>
 
 					<div class="steps-item__text fw3 text">
@@ -694,43 +705,17 @@
 				</div>
 
 				<div class="steps-item mlg">
-					<div class="steps-item__img msm">
-						<img src="assets/img/steps/i-3.svg" alt="">
-					</div>
-					<div class="steps-item__title mb">
-						<h5 class="fw6 text34">
-							Интерактивный <br>
-							прототип и дизайн
-						</h5>
-						<div class="steps-item__plus"></div>
-					</div>
-
-					<div class="steps-item__text fw3 text">
-						<p class="mbm">
-							1. Описание функционала и построение бизнес - логики приложения 
-						</p>
-						<p class="mbm">
-							2. Прогнозирование максимальной нагрузки приложения 
-						</p>
-						<p class="mbm">
-							3. Определение стека техологий для  разработки
-						</p>
-						<p class="mbm">
-							4 .Оценка стоимости и сроков разработки 
-						</p>
-					</div>
-				</div>
-
-				<div class="steps-item mlg">
-					<div class="steps-item__img msm">
-						<img src="assets/img/steps/i-4.svg" alt="">
-					</div>
-					<div class="steps-item__title mb">
-						<h5 class="fw6 text34">
-							Передача прав <br>
-							и публикация в Store
-						</h5>
-						<div class="steps-item__plus"></div>
+					<div class="steps-item__head">
+						<div class="steps-item__img msm">
+							<img src="assets/img/steps/i-2.svg" alt="">
+						</div>
+						<div class="steps-item__title mb">
+							<h5 class="fw6 text34">
+								Техническое <br>
+								задание
+							</h5>
+							<div class="steps-item__plus"></div>
+						</div>
 					</div>
 
 					<div class="steps-item__text fw3 text">
@@ -750,42 +735,17 @@
 				</div>
 
 				<div class="steps-item mlg">
-					<div class="steps-item__img msm">
-						<img src="assets/img/steps/i-5.svg" alt="">
-					</div>
-					<div class="steps-item__title mb">
-						<h5 class="fw6 text34">
-							Тестирование
-						</h5>
-						<div class="steps-item__plus"></div>
-					</div>
-
-					<div class="steps-item__text fw3 text">
-						<p class="mbm">
-							1. Описание функционала и построение бизнес - логики приложения 
-						</p>
-						<p class="mbm">
-							2. Прогнозирование максимальной нагрузки приложения 
-						</p>
-						<p class="mbm">
-							3. Определение стека техологий для  разработки
-						</p>
-						<p class="mbm">
-							4 .Оценка стоимости и сроков разработки 
-						</p>
-					</div>
-				</div>
-
-				<div class="steps-item mlg">
-					<div class="steps-item__img msm">
-						<img src="assets/img/steps/i-6.svg" alt="">
-					</div>
-					<div class="steps-item__title mb">
-						<h5 class="fw6 text34">
-							Разработка <br>
-							приложения
-						</h5>
-						<div class="steps-item__plus"></div>
+					<div class="steps-item__head">
+						<div class="steps-item__img msm">
+							<img src="assets/img/steps/i-3.svg" alt="">
+						</div>
+						<div class="steps-item__title mb">
+							<h5 class="fw6 text34">
+								Интерактивный <br>
+								прототип и дизайн
+							</h5>
+							<div class="steps-item__plus"></div>
+						</div>
 					</div>
 
 					<div class="steps-item__text fw3 text">
@@ -805,15 +765,106 @@
 				</div>
 
 				<div class="steps-item mlg">
-					<div class="steps-item__img msm">
-						<img src="assets/img/steps/i-7.svg" alt="">
+					<div class="steps-item__head">
+						<div class="steps-item__img msm">
+							<img src="assets/img/steps/i-4.svg" alt="">
+						</div>
+						<div class="steps-item__title mb">
+							<h5 class="fw6 text34">
+								Передача прав <br>
+								и публикация в Store
+							</h5>
+							<div class="steps-item__plus"></div>
+						</div>
 					</div>
-					<div class="steps-item__title mb">
-						<h5 class="fw6 text34">
-							Гарантия <br>
-							и техподдержка
-						</h5>
-						<div class="steps-item__plus"></div>
+
+					<div class="steps-item__text fw3 text">
+						<p class="mbm">
+							1. Описание функционала и построение бизнес - логики приложения 
+						</p>
+						<p class="mbm">
+							2. Прогнозирование максимальной нагрузки приложения 
+						</p>
+						<p class="mbm">
+							3. Определение стека техологий для  разработки
+						</p>
+						<p class="mbm">
+							4 .Оценка стоимости и сроков разработки 
+						</p>
+					</div>
+				</div>
+
+				<div class="steps-item mlg">
+					<div class="steps-item__head">
+						<div class="steps-item__img msm">
+							<img src="assets/img/steps/i-5.svg" alt="">
+						</div>
+						<div class="steps-item__title mb">
+							<h5 class="fw6 text34">
+								Тестирование
+							</h5>
+							<div class="steps-item__plus"></div>
+						</div>
+					</div>
+
+					<div class="steps-item__text fw3 text">
+						<p class="mbm">
+							1. Описание функционала и построение бизнес - логики приложения 
+						</p>
+						<p class="mbm">
+							2. Прогнозирование максимальной нагрузки приложения 
+						</p>
+						<p class="mbm">
+							3. Определение стека техологий для  разработки
+						</p>
+						<p class="mbm">
+							4 .Оценка стоимости и сроков разработки 
+						</p>
+					</div>
+				</div>
+
+				<div class="steps-item mlg">
+					<div class="steps-item__head">
+						<div class="steps-item__img msm">
+							<img src="assets/img/steps/i-6.svg" alt="">
+						</div>
+						<div class="steps-item__title mb">
+							<h5 class="fw6 text34">
+								Разработка <br>
+								приложения
+							</h5>
+							<div class="steps-item__plus"></div>
+						</div>
+					</div>
+
+					<div class="steps-item__text fw3 text">
+						<p class="mbm">
+							1. Описание функционала и построение бизнес - логики приложения 
+						</p>
+						<p class="mbm">
+							2. Прогнозирование максимальной нагрузки приложения 
+						</p>
+						<p class="mbm">
+							3. Определение стека техологий для  разработки
+						</p>
+						<p class="mbm">
+							4 .Оценка стоимости и сроков разработки 
+						</p>
+					</div>
+				</div>
+
+				<div class="steps-item mlg">
+					<div class="steps-item__head">
+						<div class="steps-item__img msm">
+							<img src="assets/img/steps/i-7.svg" alt="">
+						</div>
+						<div class="steps-item__title mb">
+							<h5 class="fw6 text34">
+								Гарантия <br>
+								и техподдержка
+							</h5>
+							<div class="steps-item__plus"></div>
+						</div>
 					</div>
 
 					<div class="steps-item__text fw3 text">
@@ -897,7 +948,7 @@
 
 	<!-- test -->
 
-	<div class="test">
+	<div class="test" id="test">
 		<div class="test-bg">
 			<div class="main-circle-dark v-test"></div>
 			<div class="main-circle-tg v-test"></div>
@@ -914,7 +965,7 @@
 				и получите предварительную <br> смету по вашему проекту.
 			</p>
 			<div class="test-scroll-js"></div>
-			<div class="test__block">
+			<form class="test__block">
 				<!-- 1 -->
 				<div class="test-item" >
 					<div class="test-item__title msm">
@@ -1012,14 +1063,14 @@
 						</label>
 					</div>
 					<div class="test-btns">
-						<button class="test-prev mrs poe" style="opacity: 0;">
+						<button class="test-prev mrs poe tp-m" style="opacity: 0;">
 							<span class="btn-arrow">
 								<svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M0.434314 6.56569C0.121894 6.25327 0.121894 5.74673 0.434314 5.43431L5.52548 0.343146C5.8379 0.0307264 6.34443 0.0307264 6.65685 0.343146C6.96927 0.655565 6.96927 1.1621 6.65685 1.47452L2.13137 6L6.65685 10.5255C6.96927 10.8379 6.96927 11.3444 6.65685 11.6569C6.34443 11.9693 5.8379 11.9693 5.52548 11.6569L0.434314 6.56569ZM16 6.8H0.999999V5.2H16V6.8Z"/>
 								</svg>
 							</span>
 						</button>
-						<button class="btn test-btn dark test-next" disabled>
+						<button class="btn test-btn dark test-next tn-m" disabled>
 							<span class="btn-blick"></span>
 							<span class="text18 fw6 mrs">Далее</span>
 							<span class="btn-arrow">
@@ -1297,7 +1348,7 @@
 							
 						</label>
 
-						<label for="qw310" class="t-item mb">
+						<label for="qw3-10" class="t-item mb">
 							<input type="checkbox" name="qw3" class="inp-block" value="Пуш-уведомления пользователей" id="qw3-10">
 						
 							<span class="t-item__bg poe"></span>
@@ -1702,13 +1753,13 @@
 						<img src="assets/img/test/logo-dark.svg" alt="">
 					</div>
 				</div>
-			</div>
+			</form>
 		</div>
 	</div>	
 
 
 	<!-- team -->
-	<div class="section team">
+	<div class="section team" id="team">
 		<div class="container">
 			<div class="text tgc mbs fw6">
 				06
@@ -1751,7 +1802,7 @@
 					</div>
 
 					<div class="team-slider__footer">
-						<a href="#" class="btn bord min open-js">
+						<a href="#modal-team-1" class="btn bord min open-js">
 							<span class="btn-blick"></span>
 							<span class="text18 fw6">Подробнее</span>
 						</a>
@@ -1781,7 +1832,7 @@
 					</div>
 
 					<div class="team-slider__footer">
-						<a href="#" class="btn bord min open-js">
+						<a href="#modal-team-2" class="btn bord min open-js">
 							<span class="btn-blick"></span>
 							<span class="text18 fw6">Подробнее</span>
 						</a>
@@ -1811,7 +1862,7 @@
 					</div>
 
 					<div class="team-slider__footer">
-						<a href="#" class="btn bord min open-js">
+						<a href="#modal-team-3" class="btn bord min open-js">
 							<span class="btn-blick"></span>
 							<span class="text18 fw6">Подробнее</span>
 						</a>
@@ -1840,7 +1891,7 @@
 					</div>
 
 					<div class="team-slider__footer">
-						<a href="#" class="btn bord min open-js">
+						<a href="#modal-team-3" class="btn bord min open-js">
 							<span class="btn-blick"></span>
 							<span class="text18 fw6">Подробнее</span>
 						</a>
@@ -1908,7 +1959,7 @@
 	</div>
 
 	<!-- trust -->
-	<div class="section trust">
+	<div class="section trust" id="trust">
 		<div class="container">
 			<div class="text tgc mbs fw6">
 				07
@@ -1947,7 +1998,7 @@
 	</div>
 
 	<!-- faq -->
-	<div class="section faq">
+	<div class="section faq" id="faq">
 		<div class="main-circle-dark v-faq"></div>
 		<div class="main-circle-tg v-faq"></div>
 		<div class="container faq__cont">
@@ -2049,7 +2100,7 @@
 	<!-- footer -->
 	<div class="section footer">
 		<div class="container">
-			<div class="footer-row">
+			<div class="footer-row t1">
 				<div class="logo">
 					<a href="#" class="logo__img mr">
 						<img src="assets/img/main/logo.svg" alt="">
@@ -2112,87 +2163,590 @@
 					</a>
 				</div>
 			</div>
+
+			<div class="footer-row footer-row__mobile">
+
+				<a href="#" class="footer-top">
+					<span class="text20 mr">
+						Наверх
+					</span>
+					<span class="footer-top__img">
+						<svg width="16" height="23" viewBox="0 0 16 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M8.70711 0.292892C8.31658 -0.0976314 7.68342 -0.0976315 7.29289 0.292892L0.928933 6.65685C0.538408 7.04738 0.538408 7.68054 0.928933 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292892ZM9 23L9 1L7 1L7 23L9 23Z"/>
+						</svg>
+					</span>
+
+				</a>
+			</div>
 		</div>
 	</div>
-	<!-- modals -->
 
+
+	<!-- modals -->
+	<div class="overlay" id="modal-callback" style="display: none;">
+		<div class="modal-wrap">
+			<div class="close"></div>
+
+			<div class="modal">
+
+				<form action="#" class="form">
+					<div class="form-child">
+						<h5 class="text44 fw6 tac mbs">
+							Хотите начать работу<br>
+							над приложением?
+						</h5>
+						<p class="text18 tac dgray msm">
+							Оставьте контакты, мы свяжемся с вами в ближайшее <br>
+							время, ответим на вопросы и предложим варианты!
+						</p>
+							<div class="form-block">
+								<input type="hidden" name="title" value="Оставить заявку">
+								
+								<input type="text" class="input mbm text18" placeholder="Ваше имя" required="" name="name">
+								<input type="tel" class="input mbm text18" placeholder="Номер телефона" required="" name="phone">
+								
+								<button class="btn dark max final-btn mbm" >
+									<span class="btn-blick"></span>
+									<span class="text18 fw6 mrs">Хочу начать работу!</span>
+									<span class="btn-arrow">
+										<svg width="16" height="12" viewBox="0 0 16 12" xmlns="http://www.w3.org/2000/svg">
+										<path d="M15.5657 6.56569C15.8781 6.25327 15.8781 5.74673 15.5657 5.43431L10.4745 0.343146C10.1621 0.0307264 9.65557 0.0307264 9.34315 0.343146C9.03073 0.655565 9.03073 1.1621 9.34315 1.47452L13.8686 6L9.34315 10.5255C9.03073 10.8379 9.03073 11.3444 9.34315 11.6569C9.65557 11.9693 10.1621 11.9693 10.4745 11.6569L15.5657 6.56569ZM0 6.8H15V5.2H0V6.8Z"></path>
+										</svg>
+									</span>
+								</button>
+								
+								<label for="p2" class="check-box">
+									<input type="checkbox" name="yes" id="p2" class="rhide" required="" checked="">
+								
+									<span class="check-line">
+										<span class="check-label mrm">
+											<span class="check-label-act"><img src="assets/img/test/v.svg" alt=""></span>
+										</span>
+								
+										<span class="tsm13">
+											С <a href="#" target="_blank" class="tgd tdu polit-js">политикой конфеденциальности</a> ознакомлен(а)
+										</span>
+									</span>
+								</label>
+							</div>
+						
+					</div>
+				</form>
+			</div>
+
+
+		</div>
+	</div>
+
+	<div class="overlay" id="modal-thank" style="display: none;">
+		<div class="modal-wrap ">
+			<div class="close"></div>
+
+			<div class="form fthank tac">
+				<h5 class="text44 fw6 mb">
+					Спасибо за обращение
+					в компанию Decentury!
+					Мы свяжемся с вами
+					в ближайшее время. 
+				</h5>
+				<img src="assets/img/test/logo-dark.svg" alt="" class="modal-thank__img">
+			</div>
+		</div>
+	</div>
+
+	<div class="overlay" id="modal-team-1" style="display: none;">
+		<div class="modal-wrap ">
+			<div class="close"></div>
+
+			<div class="form">
+				<div class="team-slider__head msm">
+					<div class="team-slider__head--img mrs" style="background: url(assets/img/team/t-1.png) no-repeat center; background-size: cover;"></div>
+					<div class="team-slider__head--text">
+						<h4 class="text44 fw6 mbs">
+							Полина
+							Сазонова
+						</h4>
+						<div class="text18 tgc">
+							директор ООО “Десенчери” 
+						</div>
+					</div>
+				</div>
+
+				<ul class="modal-list">
+					<li class="modal-list__item lgray text18 mb">
+						<img src="assets/img/arr-list.svg" alt="" class="modal-list__img mr">
+						<span>
+							Имеет знания и опыт на стыке ИТ и бизнеса, чтобы предлагать эффективные решения заказчикам. 
+						</span>
+					</li>
+
+					<li class="modal-list__item lgray text18 mb">
+						<img src="assets/img/arr-list.svg" alt="" class="modal-list__img mr">
+						<span>
+							Успешно реализовала более 30 проектов в команде
+							в качестве руководителя.
+						</span>
+					</li>
+
+					<li class="modal-list__item lgray text18 mb">
+						<img src="assets/img/arr-list.svg" alt="" class="modal-list__img mr">
+						<span>
+							Преподаватель на программе miniMBA в Высшей школе
+							бизнеса НГУЭУ. 
+						</span>
+					</li>
+
+					<li class="modal-list__item lgray text18">
+						<img src="assets/img/arr-list.svg" alt="" class="modal-list__img mr">
+						<span>
+							Руководитель направления Блокчейн в Лаборатории криптографии Новосибирского государственного университета, ведет научно-исследовательскую деятельность.
+						</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="overlay" id="modal-team-1" style="display: none;">
+		<div class="modal-wrap ">
+			<div class="close"></div>
+
+			<div class="form">
+				<div class="team-slider__head msm">
+					<div class="team-slider__head--img mrs" style="background: url(assets/img/team/t-1.png) no-repeat center; background-size: cover;"></div>
+					<div class="team-slider__head--text">
+						<h4 class="text44 fw6 mbs">
+							Полина
+							Сазонова
+						</h4>
+						<div class="text18 tgc">
+							директор ООО “Десенчери” 
+						</div>
+					</div>
+				</div>
+
+				<ul class="modal-list">
+					<li class="modal-list__item lgray text18 mb">
+						<img src="assets/img/arr-list.svg" alt="" class="modal-list__img mr">
+						<span>
+							Имеет знания и опыт на стыке ИТ и бизнеса, чтобы предлагать эффективные решения заказчикам. 
+						</span>
+					</li>
+
+					<li class="modal-list__item lgray text18 mb">
+						<img src="assets/img/arr-list.svg" alt="" class="modal-list__img mr">
+						<span>
+							Успешно реализовала более 30 проектов в команде
+							в качестве руководителя.
+						</span>
+					</li>
+
+					<li class="modal-list__item lgray text18 mb">
+						<img src="assets/img/arr-list.svg" alt="" class="modal-list__img mr">
+						<span>
+							Преподаватель на программе miniMBA в Высшей школе
+							бизнеса НГУЭУ. 
+						</span>
+					</li>
+
+					<li class="modal-list__item lgray text18">
+						<img src="assets/img/arr-list.svg" alt="" class="modal-list__img mr">
+						<span>
+							Руководитель направления Блокчейн в Лаборатории криптографии Новосибирского государственного университета, ведет научно-исследовательскую деятельность.
+						</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="overlay" id="modal-team-2" style="display: none;">
+		<div class="modal-wrap ">
+			<div class="close"></div>
+
+			<div class="form">
+				<div class="team-slider__head msm">
+					<div class="team-slider__head--img mrs" style="background: url(assets/img/team/t-2.png) no-repeat center; background-size: cover;"></div>
+					<div class="team-slider__head--text">
+						<h4 class="text44 fw6 mbs">
+							Алиса
+							Банникова
+						</h4>
+						<div class="text18 tgc">
+							руководитель проектов
+						</div>
+					</div>
+				</div>
+
+				<ul class="modal-list">
+					<li class="modal-list__item lgray text18 mb">
+						<img src="assets/img/arr-list.svg" alt="" class="modal-list__img mr">
+						<span>
+							Имеет знания и опыт на стыке ИТ и бизнеса, чтобы предлагать эффективные решения заказчикам. 
+						</span>
+					</li>
+
+					<li class="modal-list__item lgray text18 mb">
+						<img src="assets/img/arr-list.svg" alt="" class="modal-list__img mr">
+						<span>
+							Успешно реализовала более 30 проектов в команде
+							в качестве руководителя.
+						</span>
+					</li>
+
+					<li class="modal-list__item lgray text18 mb">
+						<img src="assets/img/arr-list.svg" alt="" class="modal-list__img mr">
+						<span>
+							Преподаватель на программе miniMBA в Высшей школе
+							бизнеса НГУЭУ. 
+						</span>
+					</li>
+
+					<li class="modal-list__item lgray text18">
+						<img src="assets/img/arr-list.svg" alt="" class="modal-list__img mr">
+						<span>
+							Руководитель направления Блокчейн в Лаборатории криптографии Новосибирского государственного университета, ведет научно-исследовательскую деятельность.
+						</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="overlay" id="modal-team-3" style="display: none;">
+		<div class="modal-wrap ">
+			<div class="close"></div>
+
+			<div class="form">
+				<div class="team-slider__head msm">
+					<div class="team-slider__head--img mrs" style="background: url(assets/img/team/t-3.png) no-repeat center; background-size: cover;"></div>
+					<div class="team-slider__head--text">
+						<h4 class="text44 fw6 mbs">
+							Дмитрий
+							Кондырев 
+						</h4>
+						<div class="text18 tgc">
+							технический директор
+						</div>
+					</div>
+				</div>
+
+				<ul class="modal-list">
+					<li class="modal-list__item lgray text18 mb">
+						<img src="assets/img/arr-list.svg" alt="" class="modal-list__img mr">
+						<span>
+							Имеет знания и опыт на стыке ИТ и бизнеса, чтобы предлагать эффективные решения заказчикам. 
+						</span>
+					</li>
+
+					<li class="modal-list__item lgray text18 mb">
+						<img src="assets/img/arr-list.svg" alt="" class="modal-list__img mr">
+						<span>
+							Успешно реализовала более 30 проектов в команде
+							в качестве руководителя.
+						</span>
+					</li>
+
+					<li class="modal-list__item lgray text18 mb">
+						<img src="assets/img/arr-list.svg" alt="" class="modal-list__img mr">
+						<span>
+							Преподаватель на программе miniMBA в Высшей школе
+							бизнеса НГУЭУ. 
+						</span>
+					</li>
+
+					<li class="modal-list__item lgray text18">
+						<img src="assets/img/arr-list.svg" alt="" class="modal-list__img mr">
+						<span>
+							Руководитель направления Блокчейн в Лаборатории криптографии Новосибирского государственного университета, ведет научно-исследовательскую деятельность.
+						</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="overlay" id="modal-portfolio-1" style="display: none;">
+		<div class="modal-wrap ">
+			<div class="close"></div>
+
+			<div class="form">
+				<div class="team-slider__head msm">
+					<div class="team-slider__head--img mrs" style="background: url(assets/img/neeo.png) no-repeat center; background-size: cover;"></div>
+					<div class="team-slider__head--text">
+						<h4 class="text44 fw6 mbs">
+							Имя Фамилия
+						</h4>
+						<div class="text18 tgc">
+							директор ООО “HEEO АПП”
+						</div>
+					</div>
+				</div>
+
+				<p class="lgray text18">
+					Воздействие на потребителя, суммируя приведенные примеры, ускоряет продуктовый ассортимент, повышая конкуренцию. Сегмент рынка сбалансирован. Информационная связь с потребителем неверно синхронизирует коллективный побочный PR-эффект, учитывая современные тенденции. Процесс стратегического планирования, согласно Ф.Котлеру, искажает институциональный бюджет на размещение. <br><br>
+					Портрет потребителя деятельно поддерживает потребительский традиционный канал. Диверсификация бизнеса, безусловно, все еще интересна для многих. Восприятие марки обуславливает конвергентный имидж предприятия. Ассортиментная политика предприятия, отбрасывая подробности, очевидна не для всех. 
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="overlay" id="politics" style="display: none;">
+		<div class="modal-wrap modal-big" style="background: #fff;">
+			<div class="close"></div>
+
+			<div class="modal">
+				<h2 class="title">
+				  ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ
+				</h2>
+
+				<p class="text-md">
+				  Настоящая Политика конфиденциальности персональных данных (далее – Политика конфиденциальности) действует в отношении всей информации, которую данный сайт, на котором размещен текст этой Политики конфиденциальности, может получить о Пользователе, а также любых программ и продуктов, размещенных на нем.
+				</p>
+				<p class="text-md">
+				  1. ОПРЕДЕЛЕНИЕ ТЕРМИНОВ
+				</p>  
+				<p class="text-md">
+				  1.1. В настоящей Политике конфиденциальности используются следующие термины:
+				</p>
+				<p class="text-md">
+				  1.1.1. «Администрация сайта» – уполномоченные сотрудники на управления сайтом, действующие от его имени, которые организуют и (или) осуществляет обработку персональных данных, а также определяет цели обработки персональных данных, состав персональных данных, подлежащих обработке, действия (операции), совершаемые с персональными данными.
+				</p> 
+				<p class="text-md">
+				  1.1.2. «Персональные данные» — любая информация, относящаяся к прямо или косвенно определенному или определяемому физическому лицу (субъекту персональных данных).
+				</p>
+				<p class="text-md">
+				  1.1.3. «Обработка персональных данных» — любое действие (операция) или совокупность действий (операций), совершаемых с использованием средств автоматизации или без использования таких средств с персональными данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание, блокирование, удаление, уничтожение персональных данных.
+				</p>
+				<p class="text-md">
+				  1.1.4. «Конфиденциальность персональных данных» — обязательное для соблюдения Администрацией сайта требование не допускать их умышленного распространения без согласия субъекта персональных данных или наличия иного законного основания.
+				</p>
+				<p class="text-md">
+				  1.1.5. «Пользователь сайта (далее Пользователь)» – лицо, имеющее доступ к сайту, посредством сети Интернет и использующее данный сайт для своих целей.
+				</p>
+				<p class="text-md">
+				  1.1.6. «Cookies» — небольшой фрагмент данных, отправленный веб-сервером и хранимый на компьютере пользователя, который веб-клиент или веб-браузер каждый раз пересылает веб-серверу в HTTP-запросе при попытке открыть страницу соответствующего сайта.
+				</p>
+				<p class="text-md">
+				  1.1.7. «IP-адрес» — уникальный сетевой адрес узла в компьютерной сети, построенной по протоколу IP.
+				</p>
+				<p class="text-md">
+				  ОБЩИЕ ПОЛОЖЕНИЯ
+				</p>
+				<p class="text-md">
+				  2.1. Использование Пользователем сайта означает согласие с настоящей Политикой конфиденциальности и условиями обработки персональных данных Пользователя.
+				</p>
+				<p class="text-md">
+				  2.2. В случае несогласия с условиями Политики конфиденциальности Пользователь должен прекратить использование сайта.
+				</p>
+				<p class="text-md">
+				  2.3. Настоящая Политика конфиденциальности применяется только к данному сайту. Администрация сайта не контролирует и не несет ответственность за сайты третьих лиц, на которые Пользователь может перейти по ссылкам, доступным на данном сайте.
+				</p>
+				<p class="text-md">
+				  2.4. Администрация сайта не проверяет достоверность персональных данных, предоставляемых Пользователем сайта.
+				</p>
+				<p class="text-md">
+				  ПРЕДМЕТ ПОЛИТИКИ КОНФИДЕНЦИАЛЬНОСТИ
+				</p>
+				<p class="text-md">
+				  3.1. Настоящая Политика конфиденциальности устанавливает обязательства Администрации сайта по умышленному неразглашению персональных данных, которые Пользователь предоставляет по разнообразным запросам Администрации сайта (например, при регистрации на сайте, оформлении заказа, подписки на уведомления и т.п).
+				</p>
+				<p class="text-md">
+				  3.2. Персональные данные, разрешённые к обработке в рамках настоящей Политики конфиденциальности, предоставляются Пользователем путём заполнения специальных форм на Сайте и обычно включают в себя следующую информацию:
+				</p>
+				<p class="text-md">
+				  3.2.1. фамилию, имя, отчество Пользователя;
+				</p>
+				<p class="text-md">
+				  3.2.2. контактный телефон Пользователя;
+				</p>
+				<p class="text-md">
+				  3.2.3. адрес электронной почты (e-mail);
+				</p>
+				<p class="text-md">
+				  3.2.4. место жительство Пользователя и другие данные.
+				</p>
+				<p class="text-md">
+				  3.3. Администрация сайта также принимает усилия по защите Персональных данных, которые автоматически передаются в процессе посещения страниц сайта:
+				</p>
+				<p class="text-md">
+				  IP адрес;
+				</p>
+				<p class="text-md">
+				  информация из cookies;
+				</p>
+				<p class="text-md">
+				  информация о браузере (или иной программе, которая осуществляет доступ к сайту);
+				</p>
+				<p class="text-md">
+				  время доступа;
+				</p>
+				<p class="text-md">
+				  посещенные адреса страниц;
+				</p>
+				<p class="text-md">
+				  реферер (адрес предыдущей страницы) и т.п.
+				</p>
+				<p class="text-md">
+				  3.3.1. Отключение cookies может повлечь невозможность доступа к сайту.
+				</p>
+				<p class="text-md">
+				  3.3.2. Сайт осуществляет сбор статистики об IP-адресах своих посетителей. Данная информация используется с целью выявления и решения технических проблем, для контроля корректности проводимых операций.
+				</p>
+				<p class="text-md">
+				  3.4. Любая иная персональная информация неоговоренная выше (история заказов, используемые браузеры и операционные системы и т.д.) не подлежит умышленному разглашению, за исключением случаев, предусмотренных в п.п. 5.2. и 5.3. настоящей Политики конфиденциальности.
+				</p>
+				<p class="text-md">
+				  4. ЦЕЛИ СБОРА ПЕРСОНАЛЬНОЙ ИНФОРМАЦИИ ПОЛЬЗОВАТЕЛЯ
+				</p>
+				<p class="text-md">
+				  4.1. Персональные данные Пользователя Администрация сайта может использовать в целях:
+				</p>
+				<p class="text-md">
+				  4.1.1. Идентификации Пользователя, зарегистрированного на сайте, для оформления заказа и (или) заключения Договора.
+				</p>
+				<p class="text-md">
+				  4.1.2. Предоставления Пользователю доступа к персонализированным ресурсам сайта.
+				</p>
+				<p class="text-md">
+				  4.1.3. Установления с Пользователем обратной связи, включая направление уведомлений, запросов, касающихся использования сайта, оказания услуг, обработка запросов и заявок от Пользователя.
+				</p>
+				<p class="text-md">
+				  4.1.4. Определения места нахождения Пользователя для обеспечения безопасности, предотвращения мошенничества.
+				</p>
+				<p class="text-md">
+				  4.1.5. Подтверждения достоверности и полноты персональных данных, предоставленных Пользователем.
+				</p>
+				<p class="text-md">
+				  4.1.6. Создания учетной записи для совершения заказов, если Пользователь дал согласие на создание учетной записи.
+				</p>
+				<p class="text-md">
+				  4.1.7. Уведомления Пользователя сайта о состоянии Заказа.
+				</p>
+				<p class="text-md">
+				  4.1.8. Обработки и получения платежей.
+				</p>
+				<p class="text-md">
+				  4.1.9. Предоставления Пользователю эффективной клиентской и технической поддержки при возникновении проблем, связанных с использованием сайта.
+				</p>
+				<p class="text-md">
+				  4.1.10. Предоставления Пользователю с его согласия, обновлений продукции, специальных предложений, информации о ценах, новостной рассылки и иных сведений от имени сайта или от имени партнеров сайта.
+				</p>
+				<p class="text-md">
+				  4.1.11. Осуществления рекламной деятельности с согласия Пользователя.
+				</p>
+				<p class="text-md">
+				  4.1.12. Предоставления доступа Пользователю на сторонние сайты или сервисы партнеров данного сайта с целью получения их предложений, обновлений или услуг.
+				</p>
+				<p class="text-md">
+				  5. СПОСОБЫ И СРОКИ ОБРАБОТКИ ПЕРСОНАЛЬНОЙ ИНФОРМАЦИИ
+				</p>
+				<p class="text-md">
+				  5.1. Обработка персональных данных Пользователя осуществляется без ограничения срока, любым законным способом, в том числе в информационных системах персональных данных с использованием средств автоматизации или без использования таких средств.
+				</p>
+				<p class="text-md">
+				  5.2. Пользователь соглашается с тем, что Администрация сайта вправе передавать персональные данные третьим лицам, в частности, курьерским службам, организациями почтовой связи, операторам электросвязи, исключительно в целях выполнения заявок Пользователя, оформленных на сайте, в рамках Договора публичной оферты
+				</p>
+				<p class="text-md">
+				  5.3. Персональные данные Пользователя могут быть переданы уполномоченным органам государственной власти только по основаниям и в порядке, установленным действующим законодательством.
+				</p>
+				<p class="text-md">
+				  6. ОБЯЗАТЕЛЬСТВА СТОРОН
+				</p>
+				<p class="text-md">
+				  6.1. Пользователь обязуется:
+				</p>
+				<p class="text-md">
+				  6.1.1. Предоставить корректную и правдивую информацию о персональных данных, необходимую для пользования сайтом.
+				</p>
+				<p class="text-md">
+				  6.1.2. Обновить или дополнить предоставленную информацию о персональных данных в случае изменения данной информации.
+				</p>
+				<p class="text-md">
+				  6.1.3. Принимать меры для защиты доступа к своим конфиденциальным данным, хранящимся на сайте.
+				</p>
+				<p class="text-md">
+				  6.2. Администрация сайта обязуется:
+				</p>
+				<p class="text-md">
+				  6.2.1. Использовать полученную информацию исключительно для целей, указанных в п. 4 настоящей Политики конфиденциальности.
+				</p>
+				<p class="text-md">
+				  6.2.2. Не разглашать персональных данных Пользователя, за исключением п.п. 5.2. и 5.3. настоящей Политики Конфиденциальности.
+				</p>
+				<p class="text-md">
+				  6.2.3. Осуществить блокирование персональных данных, относящихся к соответствующему Пользователю, с момента обращения или запроса Пользователя или его законного представителя либо уполномоченного органа по защите прав субъектов персональных данных на период проверки, в случае выявления недостоверных персональных данных или неправомерных действий.
+				</p>
+				<p class="text-md">
+				  7. ОТВЕТСТВЕННОСТЬ СТОРОН
+				</p>
+				<p class="text-md">
+				  7.1. Администрация сайта несёт ответственность за умышленное разглашение Персональных данных Пользователя в соответствии с действующим законодательством, за исключением случаев, предусмотренных п.п. 5.2., 5.3. и 7.2. настоящей Политики Конфиденциальности
+				</p>
+				<p class="text-md">
+				  7.2. В случае утраты или разглашения Персональных данных Администрация сайта не несёт ответственность, если данная конфиденциальная информация:
+				</p>
+				<p class="text-md">
+				  7.2.1. Стала публичным достоянием до её утраты или разглашения.
+				</p>
+				<p class="text-md">
+				  7.2.2. Была получена от третьей стороны до момента её получения Администрацией сайта.
+				</p>
+				<p class="text-md">
+				  7.2.3. Была получена третьими лицами путем несанкционированного доступа к файлам сайта.
+				</p>
+				<p class="text-md">
+				  7.2.4. Была разглашена с согласия Пользователя.
+				</p>
+				<p class="text-md">
+				  7.3. Пользователь несет ответственность за правомерность, корректность и правдивость предоставленной Персональных данных в соответствии с действующим законодательством.
+				</p>
+				<p class="text-md">
+				  8. РАЗРЕШЕНИЕ СПОРОВ
+				</p>
+				<p class="text-md">
+				  8.1. До обращения в суд с иском по спорам, возникающим из отношений между Пользователем сайта и Администрацией сайта, обязательным является предъявление претензии (письменного предложения о добровольном урегулировании спора).
+				</p>
+				<p class="text-md">
+				  8.2. Получатель претензии в течение 30 календарных дней со дня получения претензии, письменно уведомляет заявителя претензии о результатах рассмотрения претензии.
+				</p>
+				<p class="text-md">
+				  8.3. При не достижении соглашения спор будет передан на рассмотрение в судебный орган в соответствии с действующим законодательством.
+				</p>
+				<p class="text-md">
+				  8.4. К настоящей Политике конфиденциальности и отношениям между Пользователем и Администрацией сайта применяется действующее законодательство.
+				</p>
+				<p class="text-md">
+				  9. ДОПОЛНИТЕЛЬНЫЕ УСЛОВИЯ
+				</p>
+				<p class="text-md">
+				  9.1. Администрация сайта вправе вносить изменения в настоящую Политику конфиденциальности без согласия Пользователя.
+				</p>
+				<p class="text-md">
+				  9.2. Новая Политика конфиденциальности вступает в силу с момента ее размещения на Сайте, если иное не предусмотрено новой редакцией Политики конфиденциальности.
+				</p>
+			</div>
+
+
+		</div>
+	</div>
 
 	<script src="assets/js/libs/jquery-3.3.1.min.js"></script>
 	<script src="assets/js/fancy/jquery.fancybox.min.js"></script>
 	<script src="assets/js/slick/slick.min.js"></script>
+	<script src="assets/js/simpleParallax.min.js"></script>
+	<!-- <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script> -->
+	<!-- <script src="assets/js/jquery.mCustomScrollbar.js"></script> -->
+
+	<!-- <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script> -->
 	<!-- <script src="assets/js/libs/jquery.maskedinput.js"></script> -->
 	<!-- <script src="assets/js/libs/fancySelect.js"></script> -->
 	<!-- <script src="assets/js/libs/parallax.js"></script> -->
 	<!-- <script src="assets/js/slick/slick.min.js"></script> -->
 	
 	<script src="assets/js/test.js"></script>
-	<!-- <script src="assets/js/script.js"></script> -->
-	<script>
-		$('#menu-toggle').click(function(){
-		  $(this).toggleClass('open');
-		  $('.nav, .nav-overlay').toggleClass('active');
-		});
-
-		$('.dev-left__item').on('click', function(event) {
-			event.preventDefault();
-			if(!$(this).hasClass('active')){
-				$('.dev-left__item').removeClass('active');
-				$(this).addClass('active');
-				$('.dev-right__item').hide().eq($(this).index()).fadeIn();
-			}
-		});
-
-		$('.steps-item__title').on('click', function(event) {
-			event.preventDefault();
-			$(this).toggleClass('active').next().slideToggle();
-		});
-
-		function getFileName () {
-
-		    var file = this.value.replace(/\\/g, '/').replace(/.*\//, '');
-
-		    if(file === ''){
-		      file = "Прикрепить"
-		    }
-
-		    $(this).parents('.file-link').find('.file-text').text(file);
-
-
-		}
-
-		$('input[type="file"]').on('change input', getFileName);
-
-
-		$('.team-slider').slick({
-		  infinite: true,
-		  speed: 300,
-		  slidesToShow: 3,
-		  slidesToScroll: 1,
-		  variableWidth: true,
-		  arrows: false
-		});
-
-		$('.team-slider__next').on('click', function(event) {
-			event.preventDefault();
-			$('.team-slider').slick('slickNext');
-		});
-
-		$('.reward-slider').slick({
-		  infinite: true,
-		  speed: 300,
-		  slidesToShow: 3,
-		  variableWidth: true,
-		  arrows: false
-		});
-
-		$('.faq-item__head').on('click', function(event) {
-			event.preventDefault();
-			$(this).toggleClass('active').next().slideToggle();
-		});
-
-		$(".footer-top").on("click", function (event) {
-			$('body,html').animate({scrollTop: 0}, 1000);
-		});
-	</script>
+	<!-- <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script> -->
+	<script src="assets/js/script.js"></script>
+	
 </body>
 </html>

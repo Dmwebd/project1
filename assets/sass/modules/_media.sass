@@ -2,15 +2,9 @@
 	display: none
 @media (max-width: 900px)
 	.title-lg
-		font-size: 3.2rem
-	.title-mslg
-		font-size: 5.5rem
-		letter-spacing: .2rem
-	.title-elg
-		font-size: 6.6rem
-		letter-spacing: .2rem
+		font-size: 4rem
 	.title
-		font-size: 2.6rem
+		font-size: 4rem
 	.tgg
 		padding: 0.1rem 0.4rem
 		margin: 0.2rem 0
@@ -52,17 +46,8 @@
 	.text21
 		font-size: 1.3rem
 	.container
-		max-width: 90vw
-		margin: 0 auto
-		&-min
-			max-width: 90vw
-			margin: 0 auto
-		&-md
-			max-width: 90vw
-			margin: 0 auto
-		&-mm
-			max-width: 90vw
-			margin: 0 auto
+		max-width: 80vw
+
 	.mlg
 		margin-bottom: 4.5rem
 	.msm
@@ -101,272 +86,536 @@
 		margin-right: 1rem
 	.mrs
 		margin-right: 1.5rem
+	.text60
+		font-size: 2.6rem
+	.text18
+		font-size: 1.4rem
+	.text34
+		font-size: 2.6rem
+	.text44
+		font-size: 2.6rem
+	.text28
+		font-size: 2.2rem
+	// 26
+	.text26
+		font-size: 2rem
+	// 24
+	.text24
+		font-size: 1.7rem
+	// 23
+	.text23
+		font-size: 1.6rem
+	// 20
+	.text20
+		font-size: 1.5rem
+	.logo__img
+		width: 5rem
 	.header__number-img
 		width: 2rem
-		height: 2rem
-		padding: 0.3rem
-	.btn-main
-		width: 21rem
-	.main-i-img
-		width: 3.8rem
-		padding: 0.9rem
-	.play
-		width: 5rem
-	.contacts__right-row
-		flex-wrap: wrap
-		flex-direction: column
+	.main-advas
+		overflow-x: scroll
+	.main-advas__item
+		padding: 1.55rem 1.2rem
+		width: 205px
+		flex-shrink: 0
+		margin-right: 2rem
+
+	.btn
+		padding: 0.5rem
+		padding-left: 2rem
+		&-arrow
+			width: 3.8rem
+			height: 3.8rem
+			padding: 0.6vw
+			margin-left: 1.1rem
+	.services-puncts__item
+		padding: 0.5rem
+		padding-left: 1.5rem
+	.services-puncts__img
+		width: 31px
+		height: 31px
+		padding: 4px
+		display: flex
 		align-items: center
-	.contacts-slider-wrap
+		justify-content: center
+	.nav-item
+		margin: 0.6rem 0
+	.portfolio-item__img
+		height: auto
+	.portfolio-item__text
+		padding: 3rem
+	.portfolio-item__bot
+		position: relative
+		left: auto
+		bottom: auto
+		width: 100%
+		padding: 0
 		margin-top: 2rem
+	.portfolio-item__bot-g
+		width: 28rem
+	.portfolio-item
+		overflow: hidden
+	.dev-left
+		width: 26.156vw
+	.dev-left
+		&__cir
+			position: absolute
+			right: 1.823rem
+			top: 1.823rem
+			height: 2.188rem
+			overflow: hidden
+			&:before, &:after
+				content: ''
+				display: block
+				position: relative
+				width: 1.458rem
+				height: 1.458rem
+				border-radius: 100%
+				background: $dark
+				transition: all 0.4s ease-out
+			&.t2
+				&:before
+					margin-top: -0.729rem
+	.steps-item__title
+		.text34
+			font-size: 2.2rem
+	.steps-descr__item
+		height: 2.3rem
+		padding: 0.45rem 1.5rem
+		margin-top: 0.6rem
+		margin-bottom: 0.6rem
+	.steps-item__title
+		padding-right: 14px
+	.steps-item__plus
+		top: 4px
+		width: 14px
+		height: 14px
+	.t-item
+		padding: 1.3rem 1.5rem
+	.check
+		width: 20px
+		height: 20px
+	.test__block
 		width: 100%
-		margin-bottom: 2rem
-	.contacts-slider
+		padding: 2.6rem 3.4rem
+	.test-prev .btn-arrow
+	    width: 3.5rem
+	    height: 3.5rem
+	.file-link
+		padding: 0.5rem
+		padding-left: 1.3rem
+	.file-text__img
+		width: 3rem
+		height: 3rem
+	.check-label
+		width: 1.5rem
+		height: 1.5rem
+	.team-title__text
+		flex-wrap: wrap
+	.team-title__text .text
 		width: 100%
-		margin-left: 0
-	.contacts-slider-item
-		height: 27vw
-	.arrows.t2
+	.team-slider__item
+		width: 25rem
+		padding: 1.8rem
+		position: relative
+		height: 22.188rem
+		margin-right: 1.8rem
+		.text34
+			font-size: 2.2rem
+	.btn.min
+		padding: 0.8rem 1.5rem
+	.reward-slider__item
+		width: 25rem
+		padding: 1.3rem
+		height: 13.5rem
+		margin-right: 3rem
+		height: auto
+
+	.reward-slider__img
+		height: 2rem
+		margin-bottom: 3rem
+	.reward-slider__img
+		width: 100%
+	.trust
+		padding-top: 0
+	.trust-item
+		padding: 3rem
+	.trust-item__img
+		filter: grayscale(0)
+		opacity: 1
+	.faq__cont
+		flex-wrap: wrap
+		position: relative
+		z-index: 6
+	.faq-left
+		width: 100%
+		br
+			display: none
+	.faq-right
+		width: 100%
+		padding: 0
+	.faq-item
+		padding-bottom: 2.4rem
+	.faq-item__head--plus
+		width: 3.5rem
+		height: 3.5rem
+	.modal-wrap
+		width: 36rem
+	.modal-thank__img
 		width: 5rem
-		height: 5rem
-	.slidePrev.t2
-		left: -2.5rem
-	.slideNext.t2
-		right: -2.5rem
-	.contacts-slider-wrap .text-md
-		margin-left: 0
-	.contacts-bl
-		width: auto
-	.footer__cont
-		padding: 2rem 0
-
-
 @media (max-width: 767px)
 	.logo__img
 		max-width: 14rem
 	
-	.right
-		width: 4.5rem
-	.right-text-img
-		width: 1.5rem
-		height: 1.5rem
-	.right-item
-		width: 1.5rem
-		height: 1.5rem
-	.right-three
-		bottom: 2.4rem
-	.right-two
-		top: 6rem
-	.right-one
-		top: 2.3rem
-	.main-advas
+	.container
+		max-width: 90vw
+	.nav
+		display: none
+	.burger
+		display: block
+	.nav-item .text
+		color: $tgc
+	.services__cont
 		flex-wrap: wrap
-		justify-content: center
-	.main-advas__item
+	.services__left
+		width: 100%
+	.services__right
+		width: 100%
+	.services-item
+		padding: 2rem 0
+	.dev
+		padding-top: 0
+	.dev-left
+		width: 32.156vw
+	.dev-right
+		width: 51.958vw
+	.steps-item:nth-child(1):before, .steps-item:nth-child(4):before, .steps-item:nth-child(6):before, .steps-item:nth-child(7):before
+		display: none
+	.steps-item:nth-child(1)
+		order: 1
+	.steps-item:nth-child(2)
+		order: 2
+	.steps-item:nth-child(3)
+		order: 3
+	.steps-item:nth-child(4)
+		order: 6
+	.steps-item:nth-child(5)
+		order: 5
+	.steps-item:nth-child(6)
+		order: 4
+	.steps-item:nth-child(7)
+		order: 9
+	.steps-item:nth-child(8)
+		order: 8
+	.steps-item:nth-child(9)
+		order: 7
+	.steps-descr
+		order: 10
+		width: 100%
+		padding-right: 0
+	.steps-item
 		width: 47%
-		margin-left: 1.5%
-		margin-right: 1.5%
-		margin-bottom: 1.5rem
-		padding: 1.5rem
-	.main-advas__item-imn
+	.steps-item__img
+		width: 6rem
 		height: 6rem
-	.price__row
-
-	.price__row-item, .price__row-item.t1
+		padding: 1.3rem
+	.steps-item__text
+		padding-bottom: 2rem
+	.t-item
+		width: 47%
+	.final-left
+		display: none
+		width: 0
+	.final-right
 		width: 100%
-		padding: 1.4rem
-		&:nth-child(2)
-			display: none
-
-	.right-img
-		width: 3rem
-	.contacts__cont
+	.test__block:before
+		display: none
+	.test-bg
+		height: 100%
+	.test
+		padding-bottom: 10rem
+	.team-title
 		flex-wrap: wrap
-	.contacts__left
+		margin-bottom: 2rem
+	.team-title__text
 		width: 100%
-	.contacts__right
-		width: 100%
-	.map
-		height: 48vw
-	.contacts-slider-item
-		height: 48vw
-	.contacts-slider
-		width: 80%
-		margin-left: auto
-		margin-right: auto
-		border-radius: 10px
+		margin-top: 1.5rem
+	.team-slider__head
+		flex-wrap: wrap
+		flex-direction: column
+		text-align: center
+		align-items: center
+	.team-slider__head--img
+		width: 10rem
+		height: 10rem
+		margin-bottom: 2rem
+		margin-right: 0
+	.team-slider__item
+		width: 202px
+		height: 323px
+	.team-slider__next
+		display: none
+	.team-slider__footer
+		justify-content: center
+	.trust-item
+		width: 50%
+		height: 13rem
+	.trust-item:nth-child(-n+4)
+		border-top: 1px solid rgba(198, 202, 221, 0.5)
+	.trust-item:nth-child(1), .trust-item:nth-child(2)
+		border-top: 0
+	.trust-item:nth-child(2n)
+		border-right: none
+	.faq-item__head--plus
+		margin-left: 1.5rem
+	.faq
+		padding-bottom: 27rem
+	.main-circle-tg.v-faq
+		width: 26rem
+		height: 26rem
+		bottom: -11rem
+	.main-circle-dark.v-faq
+		bottom: -5rem
+		left: -11rem
+		width: 32rem
+		height: 32rem
+	.main-circle-tg.v-faq:after
+		left: 0
+	.footer-top__img
+		width: 6rem
+		height: 6rem
+		padding: 0.7rem
 
 @media (max-width: 567px)
 
-	.title-lg
-		font-size: 2.4rem
-	
-	.logo__text
+	.header__number
 		display: none
-	.header__map
-		display: none
-	.container
-		padding-right: 4rem
-	.right-two
-		display: none
-	.main-btns
-		flex-wrap: wrap
-		flex-direction: column
-		align-items: flex-start
-	.btn
-		padding: 1.7rem
-		margin-bottom: 1.5rem
-	.logo__img
-		max-width: 12rem
-		width: 9rem
+	.main
+		padding-bottom: 10rem
+	.main-circle-tg:before, .main-circle-tg:after
+		border: 4px solid #EE794F
+	.main-circle-tg
+		width: 267px
+		height: 267px
+		right: -8rem
+	.main-circle-tg:after
+		width: 190px
+		height: 190px
+	.main-advas
+		width: 95vw
+	.main-circle-dark
+		width: 290px
+		height: 290px
+		bottom: -120px
+		margin-right: -50px
 	.header
-		.link
+		padding: 1.5rem 0
+		padding-bottom: 2rem
+	.main-btn
+		margin-bottom: 3rem
+	.services
+		padding-top: 6rem
+	.services-puncts__item
+		width: 100%
+		justify-content: space-between
+		margin: 0.5rem 0
+	.services__left-title
+		margin-bottom: 2.5rem
+	.services__right
+		margin-top: 3rem
+	.services-item__arrow
+		display: none
+		width: 0
+	.services-item
+		position: relative
+	.services-item__img
+		position: absolute
+		right: -1rem
+		top: 1rem
+		text-align: center !important
+		width: 6rem
+	.services-item__text
+		width: 92%
+	.portfolio-item
+		flex-wrap: wrap
+	.portfolio-item__img
+		width: 100%
+		height: 102vw
+		order: -1
+	.portfolio-item__text
+		width: 100%
+		padding: 3rem 1.5rem
+		br
 			display: none
-		padding-bottom: 4rem
-	.right
-		background: transparent
-		justify-content: flex-start
-	.right-one
-		margin-bottom: 1rem
-	.main-video
-		right: -31vw
-		top: 11rem
-		width: 88vw
-	.main__cont
-		.text24
+	.portfolio-link
+		color: $dark
+		font-size: 1.5rem
+	.portfolio-item__bot-g
+		width: 25rem
+	.dev-left
+		display: none
+	.dev-right
+		width: 100%
+		padding: 2rem
+	.text28
+		font-size: 2rem
+	.mbd
+		margin-bottom: 2rem
+	.dev-right__item
+		margin-bottom: 2rem
+		display: block !important
+	.dev-left__item-mobile
+		display: flex
+		justify-content: space-between
+		align-items: center
+	.dev-left__item
+		height: auto
+		padding: 2rem 1.6rem
+		&.v2
+			margin-top: 5rem
+	.dev-left
+		&__cir
 			position: relative
-			z-index: 5
-			width: 65%
+			right: auto
+			top: auto
+			height: 3.888rem
+			overflow: hidden
+			order: 2
+			&:before, &:after
+				content: ''
+				display: block
+				position: relative
+				width: 2.558rem
+				height: 2.558rem
+				border-radius: 100%
+				background: $dark
+				transition: all 0.4s ease-out
+			&.t2
+				&:before
+					margin-top: -1.829rem
+	.modal-wrap
+		width: 28rem
+		br
+			display: none
+	.form
+		padding: 3.5rem 2rem
+	.form-block
+		width: 100%
+	.steps-item
+		width: 100%
+	.steps-item__head
+		display: flex
+		align-items: center
+		margin-bottom: 1.7rem
+	.steps-item__img
+		margin-bottom: 0
+		margin-right: 1.5rem
+	.steps-item__title
+		margin-bottom: 0
+		padding-right: 30px
+		width: 74%
+	.steps-item__plus
+		width: 22px
+		height: 22px
+	.text44
+		font-size: 2.5rem
+	.main-circle-dark.v-test
+		display: none
+	.test-descr
+		width: 100%
+		position: relative
+		left: auto
+		right: auto
+		top: auto
+		bottom: auto
+		margin-bottom: 2rem
+		margin-top: -2rem
+		br
+			display: none
+
+	.t-item
+		width: 100%
+	.tp-m
+		display: none
+		width: 0
+	.tn-m
+		width: 100%
+		justify-content: space-between
+	.test-prev .btn-arrow
+	    width: 4.5rem
+	    height: 4.5rem
+	.file-text
+		display: none
+	.final-right
+		padding: 0
+	.test
+		.text34
+			font-size: 2.4rem
+	.test-thank
+		display: flex
+		flex-direction: column
+		align-items: flex-end
+		padding-bottom: 8rem
+	.test-thank__logo
+		order: -1
+	.test-thank__logo img
+		width: 7rem
+		margin-bottom: 5rem
+	.reward-slider__item
+		width: 191px
+		// height: 162px
+	.reward-slider__label
+		width: 62px
+		right: -1rem
+		top: 1rem
+		height: auto
+	.team	
+		.btn.bord
+			border: none
+			background-color: $dark
+			color: $light
+			padding: 1.5rem 3rem
+	.trust
+		padding-bottom: 0
+	.footer-row__mobile
+		display: flex
+	.footer-row.t1 .footer-top
+		display: none
+	.footer-row
+		justify-content: center
+	.footer-row
+		flex-wrap: wrap
+		&.t2
+			text-align: center
 			br
 				display: none
-	.play
-		right: 38vw
-		top: 41%
-	.main-advas__item
-		width: 30%
-	.main-advas
-		width: 115%
-	.main-advas__item-imn
-		height: 4rem
-
-	.menu
-		position: fixed
-		width: 100%
-		height: 100vh
-		background-color: #fff
-		display: block
-		z-index: 999
-		top: 0
-		left: 0
-		padding: 1.8rem
-		&-logo
-			width: 11rem
-			margin-left: auto
-			margin-right: auto
-		.text24
-			font-size: 2.1rem
-			cursor: pointer
-		&-close
-			position: absolute
-			width: 3rem
-			right: 1rem
-			top: 2.5rem
-			cursor: pointer
-			img
-				width: 100%
-	.price-tab__item
-		padding: 1rem 1.3rem
-		margin-top: 0.5rem
-		margin-bottom: 0.5rem
-		border-radius: 12px
-	.desct
-		display: none
-	.price
-		z-index: 1001
-		background-color: #fff
-		position: fixed
-		height: 95vh
-		left: 0
-		top: 0
-		width: 100%
-		padding-top: 1.5rem
-		overflow: hidden
-		overflow-y: scroll
-		.title
-			font-size: 1.8rem
-		.container
-			padding-right: 0
-	.close-p
-		display: block
-		top: 1rem
-	.menu-about
-		z-index: 1001
-		background-color: #fff
-		position: fixed
-		height: 95vh
-		padding: 1rem
-		left: 0
-		top: 0
-		width: 100%
-		padding-top: 1.5rem
-		overflow: hidden
-		overflow-y: scroll
-		padding-bottom: 6rem
-		.title
-			font-size: 1.8rem
-	.contacts__left-img
-		transform: scale(1)
-		margin-right: 1rem
-	.menu-contacts
-		z-index: 1001
-		background-color: #fff
-		position: fixed
-		height: 95vh
-		// padding: 1rem
-		left: 0
-		top: 0
-		width: 100%
-		padding-top: 1.5rem
-		overflow: hidden
-		overflow-y: scroll
-		padding-bottom: 6rem
-		.title
-			font-size: 1.8rem
-	.map
-		height: 90vw
-		margin-bottom: 2rem
-	.back
-		position: absolute
-		width: 3rem
-		left: 1rem
-		top: 2.5rem
-		cursor: pointer
-		display: block
-		height: 2rem
-		top: 1.6rem
-		img
-			width: 100%
-	.iver2
-		display: block
-	.iver1
-		display: none
-	.right
-		padding-top: 1rem
-.mobile-bot
-	position: fixed
-	bottom: 0
-	left: 0
-	width: 100%
-	height: 6rem
-	display: flex
-	justify-content: center
-	z-index: 1006
-	background: #333333
-	align-items: center
-	.right-img
-		margin-left: 0.4rem
-		margin-right: 0.4rem
-
-@media  (min-width: 420px) and (max-width: 567px)
-
-	.main-video
-		top: 5rem
+			.text34
+				font-size: 2.4rem
+	.footer-left
+		display: flex
+		align-items: center
+		flex-direction: column
+		flex-wrap: wrap
+		justify-content: center
+	.footer-right
+		margin: 3rem 0
+	.footer-row.t3
+		justify-content: center
+		flex-direction: column
+	.footer
+		.header__number-item
+			margin: 0.4rem auto
+	.nav-overlay
+		.main-circle-dark, .main-circle-tg
+			display: none
+	.faq-item__head.active
+		margin-bottom: 1rem
+	.footer-row__mobile
+		display: flex
+	.footer-top
+		display: flex
+		flex-direction: column
+		align-items: center
+		.text20
+			margin-right: 0
+			margin-bottom: 1rem
