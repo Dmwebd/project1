@@ -3059,10 +3059,6 @@ textarea::placeholder {
   margin-right: 1rem;
 }
 
-.dev-left__item-mobile {
-  display: none;
-}
-
 .services {
   padding-top: 8vw;
 }
@@ -4471,6 +4467,10 @@ textarea::placeholder {
   display: none;
 }
 
+.dev-left__item-mobile {
+  display: none;
+}
+
 .mobs {
   display: none;
 }
@@ -5173,6 +5173,15 @@ textarea::placeholder {
     height: 6rem;
     padding: 0.7rem;
   }
+
+  .final-mobile {
+    color: #354BAC;
+  }
+
+  .final-left__item {
+    width: 100%;
+    padding: 1.5rem;
+  }
 }
 
 @media (max-width: 567px) {
@@ -5467,9 +5476,7 @@ textarea::placeholder {
   }
 
   .test-thank {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -5478,6 +5485,12 @@ textarea::placeholder {
     -ms-flex-align: end;
     align-items: flex-end;
     padding-bottom: 8rem;
+  }
+
+  .test-thank.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 
   .test-thank__logo {

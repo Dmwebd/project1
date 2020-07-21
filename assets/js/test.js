@@ -54,7 +54,7 @@ $(document).ready(function($) {
     });
   }
 
-
+$('.test-item').eq(5)
   // клики
   btnNext.on('click', function(event) {
     event.preventDefault();
@@ -64,32 +64,47 @@ $(document).ready(function($) {
       testItem(ns + 1);
       ++ns;
 
+      var qwOne = '';
+      function valQw(num, text){
+         $(item).eq(num).find('.t-item input').each(function(index, el) {
+           if($(this).prop('checked')){
+            qwOne += $(this).val() + ' ,';
+           }
+         });
+         qwOne = qwOne.substring(0, qwOne.length - 1);
+         console.log(qwOne)
+         $(text).text(qwOne);
+         if(num === 3){
+           qwOne = 'Дизайн: ';
+         }else if(num === 4){
+           qwOne = 'ТЗ: ';
+         }else{
+           qwOne = '';
+         }
+
+      }
+
       if(ns === itemCol - 2){
          $('.final').addClass('active');
          $('.test__block').addClass('active');
-         var qwOne = '';
-         function valQw(num, text){
-            $(item).eq(num).find('.t-item input').each(function(index, el) {
-              if($(this).prop('checked')){
-               qwOne += $(this).val() + ' ,';
-              }
-            });
-            qwOne = qwOne.substring(0, qwOne.length - 1)
-            $(text).text(qwOne);
-            if(num === 5){
-              qwOne = 'Дизайн: ';
-            }else{
-              qwOne = '';
-            }
+         if(!$('body').find('.final-mobile').length > 0){
+           valQw(0 , '.text-qw-1');
+           valQw(1 , '.text-qw-2');
+           valQw(2 , '.text-qw-3');
+           valQw(3 , '.text-qw-4');
+           valQw(4 , '.text-qw-5');
+           valQw(5 , '.text-qw-6');
          }
-
-         valQw(0 , '.text-qw-1');
-         valQw(1 , '.text-qw-2');
-         valQw(2 , '.text-qw-3');
-         valQw(3 , '.text-qw-4');
-         valQw(4 , '.text-qw-5');
-         valQw(5 , '.text-qw-6');
-         
+      }
+      if($(item).eq(ns).hasClass('final-mobile')){
+        
+        valQw(0 , '.text-qw-1');
+        valQw(1 , '.text-qw-2');
+        valQw(2 , '.text-qw-3');
+        valQw(3 , '.text-qw-4');
+        valQw(4 , '.text-qw-5');
+        valQw(5 , '.text-qw-6');
+        
       }
       animateTop ();
     

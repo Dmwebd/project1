@@ -385,7 +385,11 @@
 		width: 6rem
 		height: 6rem
 		padding: 0.7rem
-
+	.final-mobile
+		color: $dark
+	.final-left__item
+		width: 100%
+		padding: 1.5rem
 @media (max-width: 567px)
 
 	.header__number
@@ -552,10 +556,12 @@
 		.text34
 			font-size: 2.4rem
 	.test-thank
-		display: flex
+		display: none
 		flex-direction: column
 		align-items: flex-end
 		padding-bottom: 8rem
+		&.active
+			display: flex
 	.test-thank__logo
 		order: -1
 	.test-thank__logo img

@@ -1,4 +1,8 @@
-
+// window.smoothScroll();
+$( document ).ready(function() {
+    /*Smooth Scroll*/
+    SmoothScroll({ keyboardSupport: false, stepSize: 50 });
+});
 $(document).ready(function($) {
  $('body,html').animate({scrollTop: 0}, 200); 
 });
@@ -183,7 +187,7 @@ $(function(){
       });
       $('.test-item').hide();
       $('.final, .test__block').removeClass('active');
-      $('.test-thank').fadeIn();
+      $('.test-thank').fadeIn().addClass('active');
 
     }else{
       $(".overlay").fadeOut();
