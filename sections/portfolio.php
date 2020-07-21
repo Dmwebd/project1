@@ -86,7 +86,7 @@
 			</div>
 
 			<div class="portfolio-items tac">
-				<a href="#" class="btn open-js">
+				<a href="portfolio.php" class="btn">
 					<span class="btn-blick"></span>
 					<span class="text18 fw6">Еще проекты</span>
 					<span class="btn-arrow">

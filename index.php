@@ -1,5 +1,6 @@
 <?php 
     include 'sections/head.php';
+    $pages = 'index';
 ?>
 <body>
 	<?php 

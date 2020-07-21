@@ -79,4 +79,11 @@
 				</a>
 			</div>
 		</div>
+
+		<div class="container footer__cont">
+			<div class="text fw5">© ООО DECENTURY, 2018–2020</div>
+
+			<a href="#" class="text fw5 politica">Политика конфеденциальности</a>
+
+		</div>
 	</div>

@@ -1,0 +1,35 @@
+.feedback
+	position: relative
+	padding-bottom: 5vw
+	&:before
+		content: ''
+		position: absolute
+		bottom: 0
+		left: 0
+		width: 100%
+		height: 14vw
+		background-color: $dark
+	&-slider
+		width: 95vw
+		&__item
+			width: 32vw
+			padding: 1.8vw
+			position: relative
+			// height: 27vw
+			margin-right: 1.8vw
+			background: $light
+			border: 1px solid #EBE7F2
+			border-radius: 20px
+			display: flex !important
+			flex-wrap: wrap
+			flex-direction: column
+			// justify-content: space-between
+			cursor: move
+
+
+.read-link
+	color: $dark
+	transition: all 0.4s
+	margin-top: 0.7vw
+	&:hover
+		color: $tgc

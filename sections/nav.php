@@ -34,6 +34,16 @@
 		<div class="main-circle-dark sacaleAnim"></div>
 		<div class="main-circle-tg sacaleAnim"></div>
 		<div class="container nav-overlay__cont">
+			<?php 
+				
+				if($pages == 'index'){
+					$url = '';
+				}else{
+					$url = 'index.php';
+				}
+
+			 ?>
+
 			<ul class="nav-list">
 				<li>
 					<a href="/" class="nav-item">
@@ -44,7 +54,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="#services" class="nav-item">
+					<a href="<?php echo $url; ?>#services" class="nav-item">
 						<span class="fwb text ">02</span>
 						<span class="fw5 text60">
 							Услуги
@@ -52,7 +62,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="#portfolio" class="nav-item">
+					<a href="<?php echo $url; ?>#portfolio" class="nav-item">
 						<span class="fwb text ">03</span>
 						<span class="fw5 text60">
 							Портфолио
@@ -60,7 +70,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="#dev" class="nav-item">
+					<a href="<?php echo $url; ?>#dev" class="nav-item">
 						<span class="fwb text ">04</span>
 						<span class="fw5 text60">
 							Этапы
@@ -76,7 +86,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="#team" class="nav-item">
+					<a href="<?php echo $url; ?>#team" class="nav-item">
 						<span class="fwb text ">06</span>
 						<span class="fw5 text60">
 							Команда
@@ -84,7 +94,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="#trust" class="nav-item">
+					<a href="<?php echo $url; ?>#trust" class="nav-item">
 						<span class="fwb text ">07</span>
 						<span class="fw5 text60">
 							Нам доверяют
@@ -92,7 +102,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="#faq" class="nav-item">
+					<a href="<?php echo $url; ?>#faq" class="nav-item">
 						<span class="fwb text ">08</span>
 						<span class="fw5 text60">
 							FAQ

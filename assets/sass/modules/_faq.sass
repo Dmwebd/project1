@@ -80,6 +80,7 @@
 .footer
 	color: $light
 	background-color: $dark
+	padding-bottom: 4vw
 	&-row
 		display: flex
 		justify-content: space-between
@@ -118,3 +119,27 @@
 		background-color: $light
 		path
 			fill: $dark
+	&__cont
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding-top: 2.4vw
+		border-top: 1px solid rgba(255, 255, 255, 0.3)
+		margin-top: 7vw
+.politica
+	color: $light
+	transition: all 0.4s
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		left: 50%
+		top: 100%
+		transform: translateX(-50%)
+		width: 0
+		height: 1px
+		background-color: $light
+		transition: all 0.3s ease-out
+	&:hover
+		&:before
+			width: 100%

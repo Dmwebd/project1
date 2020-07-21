@@ -3,9 +3,9 @@ $( document ).ready(function() {
     /*Smooth Scroll*/
     SmoothScroll({ keyboardSupport: false, stepSize: 50 });
 });
-$(document).ready(function($) {
- $('body,html').animate({scrollTop: 0}, 200); 
-});
+// $(document).ready(function($) {
+//  $('body,html').animate({scrollTop: 0}, 200); 
+// });
 
 // (function ($) {
 //       $(window).on("load", function () {
@@ -215,3 +215,11 @@ $(function(){
     });
   });
 });
+
+
+function isMobile() {
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+          return true; 
+    }
+    return false;
+}

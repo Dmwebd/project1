@@ -1,0 +1,79 @@
+.portfolio-page-cd
+	bottom: auto
+	top: 7vw
+	right: -25vw
+	width: 38vw
+	height: 38vw
+.main-circle-tg.portfolio-page-tg
+	right: -8vw
+
+
+
+.pp
+	&__cont
+
+	&-item
+		display: flex !important
+		justify-content: space-between
+		background-color: $light
+		min-height: 100vh
+		cursor: move
+	&-left
+		width: 50%
+		padding: 4vw
+		padding-left: 13vw
+		align-self: center
+		&__row
+			display: flex
+			align-items: center
+			&.t2
+				flex-wrap: wrap
+				color: #818181
+				img
+					filter: grayscale(1)
+		&-items
+			display: flex
+			align-items: center
+			&__img
+				height: 3vw
+				padding: 0.3vw 0.7vw
+				display: flex
+				align-items: center
+				justify-content: center
+				flex-shrink: 0
+				border-radius: 5px
+				border: 0.3px solid #C9CEE8
+				
+		&__block
+			p
+				display: inline
+	&-right
+		width: 50%
+	.slick-dots
+		bottom: auto
+		right: 2vw
+		left: auto
+		top: 50%
+		transform: translateY(-50%)
+		display: flex
+		flex-direction: column
+		width: auto
+		// #2E3F8A
+	.slick-dots li button
+		padding: 2px
+	.slick-dots li button:before
+		font-size: 12px
+		opacity: 1
+		color: #2E3F8A
+	.slick-dots li.slick-active button:before
+		color: $tgc
+		opacity: 1
+
+
+.row-arrow
+	display: flex
+	align-items: center
+	&__img
+		width: 1.3vw
+
+
